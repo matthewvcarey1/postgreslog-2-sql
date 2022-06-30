@@ -31,3 +31,11 @@ You may need to set the file src/postgreslog2sql.ts as executable.
 
 `chmod a+x src/postgreslog2sql.ts`
 
+## Related
+
+### Building a container that logs
+https://stackoverflow.com/questions/57015003/log-all-queries-in-the-official-postgres-docker-image
+
+### Getting the logs out to a file
+
+ `docker logs -tf CONTAINER_NAME 1>postgres.log 2>postgres.err &`
