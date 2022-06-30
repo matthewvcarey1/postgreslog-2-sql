@@ -14,3 +14,7 @@ If you are using a library such as TypeOrm, you are insulated from the complexit
 Caveat: This code will not cope with a massive pipe of log text all at once, node just bales out, rather just pipe the logs as you run your database normally
 
 If you are running postgres in a docker container you make a container that logs and get docker to record the logs locally.
+
+## Usage
+
+`tail -f postgres.err | postgreslog2Sql.ts`
