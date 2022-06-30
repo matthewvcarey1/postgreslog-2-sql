@@ -19,11 +19,11 @@ If you are running postgres in a docker container you make a container that logs
 
 `tail -f postgres.err | src/postgreslog2Sql.ts`
 
-## Requirments
+## Requirements
 
 node and typescript need to be installed.
 
-Before using it the first time you will need to run 
+Before using it the first time you will need to run in the root folder of this project.
 
 `npm i`
 
