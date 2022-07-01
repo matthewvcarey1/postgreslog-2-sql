@@ -11,6 +11,8 @@ More crucially it is possible prepend them with EXPLAIN ANALYZE and understand w
 
 If you are using a library such as TypeOrm, you are insulated from the complexity of your queries on Postgres. This should help allow you to unpick what is actually happening.
 
+Caveat: It is possible to set custom log line prefixes, and the way I am detecting continuation lines is possibly a bit fragile.
+
 Caveat: This code will not cope with a massive pipe of log text all at once, node just bales out, rather just pipe the logs as you run your database normally
 
 If you are running postgres in a docker container you make a container that logs and get docker to record the logs locally.
